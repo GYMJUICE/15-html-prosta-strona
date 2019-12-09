@@ -60,13 +60,25 @@
             background-color: mediumvioletred;
         }
         #sq1 {
-            border: 3px solid rgb(151, 9, 9);
+            border: 3px solid rgb(151, 9, 9);            
         }
         #sq2 {
             border: 3px solid rgb(122, 141, 35);
         }
         #sq3 {
             border: 3px solid rgb(41, 7, 104);
+        }
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: green;
         }
 
     </style>
@@ -85,7 +97,8 @@
     <!-- sekcja about -->
     <section>
         <div class="backgroundcolor">
-        <h3>About us</h3>
+        <a id="sekcja_o_nas">
+        <h3>About us</h3></a>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui laboriosam dolorum voluptatibus consequatur
             iure labore aperiam cumque nisi? Vel sint ipsum eum culpa magni neque perspiciatis inventore dignissimos est
             facere.
@@ -94,17 +107,39 @@
     </section>
     <!-- sekcja skills -->
     <section>
-        <h3>Skills</h3>
+        <a id="sekcja_skills"><h3>Skills</h3></a>
         <div class="square" id="s1"></div>
         <div class="square" id="s2"></div>
         <div class="square" id="s3"></div>
     </section>
     <!-- sekcja portfolio -->
     <section>
-        <h3>Portfolio</h3>
+            <a id="sekcja_portfolio"><h3>Portfolio</h3></a>
         <div class="square1" id="sq1"></div>
         <div class="square1" id="sq2"></div>
         <div class="square1" id="sq3"></div>
+    </section>
+    <!-- sekcja kontakt -->
+    <section>
+            <a id="sekcja_kontakt"><h3>Paweł Migo</h3></a>
+        <address>
+            <a href="mailto:pawel.migo@gmail.com">Napisz do mnie</a><br>
+            ulica Mostowa 5<br>
+            05-500 Piaseczno<br>
+            tel: 500 000 000<br>
+        </address>
+        <br>
+        <form>
+            <div><input type="text" name="Imię" required>Imię</div><br>
+            <div><input type="text" name="Temat" required>Temat</div><br>
+            <div><input type="text" name="Wiadomość" required>Wiadomość</div>
+            <br>
+            <div>
+                <button class="button">Wyślij
+                </button>
+            </div>
+                
+        </form>
     </section>
 
 
